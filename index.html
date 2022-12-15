@@ -1,0 +1,598 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Планиметрия</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<style>
+			.d1 {
+	width: 200px; 
+	height: 200px;
+	background: #83A7C9;
+	border-radius: 100%;
+	float: right;
+	}
+
+	.d2 {
+	width: 200px;
+	height: 200px;
+	background: rgb(121, 194, 114);
+	float: right;
+}
+
+.d3 {
+width: 0; 
+height: 0;
+border-left: 100px solid transparent;
+border-right: 100px solid transparent;
+border-bottom: 200px solid #853296;
+float: left;
+}
+
+.d4 {
+margin-left: 20px; 
+width: 250px; 
+height: 200px;
+transform: skew(20deg);
+background: #ccc932;
+float: left;
+}
+
+.d5 {
+height: 0; 
+width: 200px;
+border-bottom: 200px solid #7c2222;
+border-left: 70px solid transparent;
+border-right: 70px solid transparent;
+float: right;
+}
+
+.d6 {
+margin-bottom: 20px; 
+width: 0; 
+height: 0;
+border: 70px solid transparent;
+border-bottom: 100px solid #47002D;
+position: relative; 
+top: -50px;
+float: left;
+}
+.d6:after {
+content: "";
+width: 0; 
+height: 0;
+position: absolute; 
+left: -70px; 
+top: 100px;
+border: 70px solid transparent;
+border-top: 100px solid #47002D;
+float: left;
+}
+
+.kv {
+	float: right;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						Планиметрия
+						===========
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						Фигуры планиметрии
+						--------
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Круг
+
+						***Круг*** — часть плоскости, которая лежит внутри окружности. <div id="circle1" class="d1"></div>
+						Другими словами, это геометрическое место точек плоскости, расстояние от 
+						которых до заданной точки, называемой центром круга, не превышает заданного 
+						неотрицательного числа R. 
+						
+						Число R называется ***радиусом*** этого круга.
+
+						
+						
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Квадрат	
+
+						***Квадрат*** (от лат. quadratus, четырёхугольный) — правильный четырёхугольник, <div id="square" class="d2"></div>
+						то есть плоский четырёхугольник, у которого все углы и все стороны равны. 
+						
+						Каждый угол квадрата — прямой ($90^{\circ}$).
+					</script>
+				</section>
+
+				
+				<section data-markdown>
+					<script type="text/template">
+						### Треугольник
+
+						***Треугольник*** (в евклидовом пространстве) — геометрическая фигура, образованная тремя отрезками, 
+						<div id="rtiangle" class="d3"></div>
+						которые соединяют три точки, не лежащие на одной прямой. 
+					
+						Указанные три точки называются вершинами треугольника, а отрезки — сторонами треугольника.
+					 
+					
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Параллелограмм
+						
+						***Параллелограмм*** (от греч. παραλληλόγραμμον ← παράλληλος «параллельный» + γραμμή «линия») — 
+						<div id="para" class="d4"></div>
+						четырёхугольник, у которого противолежащие стороны попарно параллельны, то есть лежат на 
+						параллельных прямых.
+
+						Частными случаями параллелограмма являются прямоугольник, квадрат и ромб.
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Трапеция
+	
+						***Трапеция*** (от греч. τράπεζα — «стол») — выпуклый четырёхугольник, у которого две 
+						стороны параллельны, а две другие стороны не параллельны. 
+						<div id="trap" class="d5"></div>
+						Параллельные противо-положные стороны называются основаниями трапеции, а две другие — 
+						боковыми сторонами.
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						### Ромб
+		
+						***Ромб*** (от греч. ῥόμβος, лат. rombus, в буквальном переводе: «бубен») — 
+						<div id="romb" class="d6"></div>
+						это параллелограмм, 
+						у которого все стороны равны.
+						
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+							  Периметр фигур
+							 -----------------
+					</script>
+				</section>		
+		
+						<section data-markdown>
+							<script type="text/template">
+								### Круг
+
+								Периметр круга (длина граничной окружности): $L = 2\pi R$.
+
+								Например: радиус $R=5$. Тогда периметр круга $L = 2\pi \cdot 5 = 10 \pi$.
+
+								![circle](img/circle.jpg)
+							</script>
+						</section>
+
+						<section data-markdown>
+							<script type="text/template">
+									### Квадрат и ромб
+	
+									Периметр квадрата (или ромба) $P$ со стороной $a$ равен: 
+									
+									$P = 4a$.
+
+									Например: сторона $a=15$. Тогда периметр квадрата (или ромба) $P = 4\cdot15 = 60$.
+
+									<img width="200px" src="img/area.jpg">
+									<img width="300px" src="img/perimetrromba.jpg">
+							</script>
+							</section>
+			
+							<section data-markdown>
+							<script type="text/template">
+									### Треугольник
+	
+									Периметр треугольника $P$ со сторонами $a, b, c$ равен: $P = a + b + c$.
+									
+									
+									Например: стороны $a=2, b = 6, c = 4$. Тогда периметр треугольника $P = 2 + 6 +4 = 12$.
+
+									<img width="300px" src="img/triangle_perimeter1.png">
+									
+									
+							</script>
+							</section>
+
+							<section data-markdown>
+								<script type="text/template">
+										### Параллелограмм
+		
+										Периметр параллелограмма $P$ со сторонами $a, b$ равен: $P = 2\cdot(a + b)$.
+
+										Например: стороны $a=3, b = 8$. Тогда периметр параллелограмма $P = 2 \cdot (3+8) = 22$. 
+
+										<img width="300px" src="img/paralelograma.jpg">
+								</script>
+								</section>
+					
+
+					
+							<section data-markdown>
+								<script type="text/template">
+									### Трапеция
+		
+									Периметр трапеции $P$ со сторонами $a, b, c, d$ равен: $P = a + b + c + d$.
+
+									Например: стороны $a=1, b = 2, c = 3, d = 4$. Тогда периметр трапеции $P = 1+2+3+4 = 10$. 	
+
+									<img width="350px" src="img/2-4-300x127.jpg">
+									
+								</script>
+							</section>
+
+							<section>
+								<h3>Нахождение периметра фигур</h3>
+								
+							</section>
+
+							<section data-markdown>
+								<script type="text/template">
+										  Площади фигур
+										 -----------------
+								</script>
+							</section>
+
+							<section>
+							<section data-markdown>
+								<script type="text/template">
+										### Круг
+			
+										Площадь круга радиуса $R$ вычисляется по формуле:	$S = \pi R^2$. 
+
+										Например: $R=10$. Тогда площадь круга $S = \pi 10^2 = 100 \pi$.
+
+										<img width="300px" src="img/radius.png">
+								</script>
+							</section>
+							<section data-markdown>
+								<script type="text/template">
+										### Круг
+			
+										Площадь круга через диаметр $d$ равна:	$S =\frac{1}{4} \pi d^2$. 
+
+										Например: $d=8$. Тогда площадь круга 
+										
+										$S =\frac{1}{4} \cdot 8^2 \pi=16 \pi$.
+								</script>
+							</section>
+							</section>
+
+						<section>
+							<section data-markdown>
+								<script type="text/template">
+								### Квадрат
+	
+								Площадь квадрата $S$ со стороной $a$ равна: $S = a^2$. 
+														
+
+								Например: $a=5$. Тогда площадь квадрата  $S = 5^2 = 25$.
+
+								<img width="200px" src="img/kvadrat.jpg">
+							
+								</script>
+							</section>
+
+							<section data-markdown>
+								<script type="text/template">
+								### Квадрат
+	
+								Площадь квадрата равна половине квадрата диагонали $d$: 
+										
+								$S = \frac{d^2}{2}$. <img width="200px" src="img/kvadrat2.jpg" class ="kv">
+
+								Например: $d=12$. Тогда площадь квадрата  
+								
+								$S = \frac{12^2}{2} = 72$.
+
+								
+							
+								</script>
+							</section>
+
+						</section>
+
+							<section>
+								<section data-markdown>
+									<script type="text/template">
+										### Треугольник
+	
+										Площадь треугольника можно вычислить тремя способами:
+
+										1) Площадь треугольника $S$ с основанием $a$ и высотой $h$ равна: $S = \frac{1}{2} ah$.
+										
+										
+										Например: $a=4, h = 7$. Тогда площадь треугольника $S = \frac{1}{2} \cdot 4 \cdot 7 = 14$.
+
+										<img width="250px" src="img/treug1.jpg">
+									</script>
+									</section>
+
+									<section data-markdown>
+										<script type="text/template">
+											### Треугольник
+		
+											2) Площадь треугольника $S$ со сторонами $a, b$ и углом между ними $\alpha$ равна: 
+											$S = \frac{1}{2} ab \sin{\alpha}$.
+											
+											
+											Например: $a=2, b = 4, \alpha = 30^{\circ}$. Тогда площадь треугольника 
+											$S = \frac{1}{2}\cdot 2 \cdot 4 \cdot \sin{30^{\circ}} = 4\cdot \frac{1}{2} = 2$.
+
+											<img width="300px" src="img/treug2.jpg">
+										</script>
+										</section>
+							
+
+									<section data-markdown>
+										<script type="text/template">
+											### Треугольник
+			
+											3) Площадь треугольника $S$ со сторонами $a, b, c$ равна: 
+											$S = \sqrt{p(p-a)(p-b)(p-c)}$,
+
+											где $p$ - полупериметр, $p = \frac{a+b+c}{2}$.
+											
+												
+											Например: $a=10, b = 6, c = 8$, <img width="300px" src="img/treug3.jpg" class ="kv">
+												
+											$p =\frac{10+6+8}{2} = 12$. 
+												
+											Тогда площадь треугольника 
+												
+											$S = \sqrt{12(12-10)(12-6)(12-8)} = 24$.
+										</script>
+									</section>
+								</section>
+
+
+							<section>
+									<section data-markdown>
+										<script type="text/template">
+											### Трапеция
+
+											Площадь трапеции равна произведению полусуммы её оснований на высоту:
+
+											$S = \frac{(a+b)}{2}h$.<img width="400px" src="img/2_1585030777.jpg" class ="kv">
+
+											Например, $a=3, b = 5, h = 6$. Тогда площадь трапеции равна
+
+											$S = \frac{(3+5)}{2} \cdot 6 = 24$.
+											
+											
+											
+										</script>
+									</section>
+
+									<section data-markdown>
+										<script type="text/template">
+											### Трапеция
+
+											Площадь трапеции равна произведению средней линии на высоту:
+
+											$S = mh$.<img width="400px" src="img/2-4-300x127.jpg" class ="kv">
+
+											Например, $m=5, h = 6$. Тогда площадь трапеции равна
+
+											$S = 5 \cdot 6 = 30$.
+
+											
+											
+											
+										</script>
+									</section>
+							</section>
+
+
+							<section>
+								<section data-markdown>
+									<script type="text/template">
+										### Параллелограмм
+
+										Площадь параллелограмма равна произведению его основания на высоту:
+
+										$S = ah$. <img width="400px" src="img/theory_1.jpg" class ="kv">
+
+										Например, $a=12, h = 5$. Тогда площадь параллелограмма равна
+
+										$S = 12 \cdot 5 = 60$.
+			
+										
+									</script>
+								</section>
+
+								<section data-markdown>
+									<script type="text/template">
+										### Параллелограмм
+
+										Площадь параллелограмма со сторонами $a,b$ равна их произведению, умноженную
+										на синус угла между ними:
+
+										$S = ab \cdot \sin{\alpha}$. 
+
+										Например, $a=4,b=7, \alpha = 45{\circ}$. Тогда площадь параллелограмма равна
+
+										$S = 4 \cdot 7 \cdot \sin{45^{\circ}} = 14 \sqrt{2}$.
+										
+										<img width="400px" src="img/theory_2.jpg">
+			
+										
+									</script>
+								</section>
+						</section>
+
+					<section>
+						<section data-markdown>
+							<script type="text/template">
+								### Ромб
+
+								Площадь ромба равна произведению основания на высоту:
+
+								$S = ah $.
+
+								Например, $a=8,h=10$. Тогда площадь ромба равна
+
+								$S = 8 \cdot 10 = 80$.
+
+								<img width="500px" src="img/S_romb1.png">
+	
+								
+							</script>
+						</section>
+
+						<section data-markdown>
+							<script type="text/template">
+								### Ромб
+
+								Площадь ромба со стороной $a$ равна произведению квадрата его стороны на синус угла ромба:
+
+								$S = a^2 \cdot \sin{\alpha} $.
+
+								Например, $a=3,\alpha=30^{\circ}$. Тогда площадь ромба равна
+
+								$S = 3^2 \cdot \sin{30^{\circ}} = 9 \cdot \frac{1}{2} = 4.5$.
+
+								<img width="500px" src="img/S_romb2.png">
+	
+								
+							</script>
+						</section>
+
+						<section data-markdown>
+							<script type="text/template">
+								### Ромб
+
+								Площадь ромба равна половине произведения его диагоналей:
+
+								$S = \frac{1}{2} \cdot d_1 \cdot d_2$.
+
+								Например, $d_1=4, d_2 = 5$. Тогда площадь ромба равна
+
+								$S =  \frac{1}{2} \cdot 4 \cdot 5 = 10$.
+	
+								<img width="500px" src="img/S_romb3.png">
+								
+							</script>
+						</section>
+					</section>
+					
+
+							<section>
+								<h3>Нахождение площадей фигур</h3>
+
+							</section>
+
+							<section data-markdown>
+								<script type="text/template">
+								
+								![в-кругу-друзей](img/в_кругу_друзей.jpg)
+								</script>
+								</section>
+
+								<section data-markdown>
+									<script type="text/template">
+									
+									![квадрат](img/квадрат.jpg)
+									</script>
+									</section>
+
+									<section data-markdown>
+										<script type="text/template">
+										
+										![площадь](img/площадь.jpg)
+										</script>
+										</section>
+							
+							<section> Спасибо за внимание!</section>	
+
+				</div>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				controls: true,
+				slideNumber: true,
+				transition: 'slide',
+				dependencies: [
+					{
+						src: 'plugin/menu/menu.js', 
+						async: true
+					},
+					{
+								src: 'plugin/jump/jump.js', 
+								async: true 
+							}],
+					menu: {
+							side: 'left', //Расположение меню
+							numbers: true, //Нумерация слайдов
+							markers: true, //Маркер посещения
+							//Заголовки, отображаемые в меню
+							titleSelector: 'h1, h2, h3, h4, h5, h6', 
+							//Если заголовка нет, то подставляем первые слова слайда
+							useTextContentForMissingTitles: true, 
+							//Если заголовка нет, то скрываем слайд из меню
+							hideMissingTitles: false, 
+							transitions: true, //Установить меню анимации
+							openButton: true, //Скрыть кнопку меню
+							keyboard: true, //Открытие меню по кнопке m
+						   },
+						   
+   					
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealZoom]
+			});
+		</script>
+	</body>
+</html>
