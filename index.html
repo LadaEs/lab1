@@ -14,7 +14,9 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
 		<style>
-			.d1 {
+	
+	
+	.d1 {
 	width: 200px; 
 	height: 200px;
 	background: #83A7C9;
@@ -81,6 +83,273 @@ float: left;
 .kv {
 	float: right;
 }
+
+#area {
+            
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#area .input{
+	display: block;
+	position: relative;
+	margin: 50px;
+}
+ 
+.lb1{/*r круга*/
+left: 250px;
+top:250px;
+z-index: 2;
+position: fixed;
+}
+.lb2{/*d круга*/
+left: 200px;
+top:410px;
+z-index: 2;
+position: fixed;
+}
+
+.lb3{/*вывод P круга*/
+right: 100px;
+top:100px;
+position: fixed;
+}
+.lb4{/*вывод S круга*/
+right: 100px;
+top:150px;
+position: fixed;
+}
+
+.lb5{/*a квадрата*/
+left: 250px;
+top:600px;
+position: fixed;
+z-index: 2;
+}
+
+.lb6{/*d квадрата*/
+left: 300px;
+top:300px;
+position: fixed;
+z-index: 2;
+}
+
+.lb7{/*вывод P квадрата*/
+right: 100px;
+top:100px;
+position: fixed;
+}
+.lb8{/*вывод S квадрата*/
+right: 100px;
+top:150px;
+position: fixed;
+}
+
+.lb9{/*a треугольника*/
+left: 200px;
+top:620px;
+position: fixed;
+z-index: 2;
+}
+
+.lb10{/*b треугольника*/
+left: 430px;
+top:300px;
+position: fixed;
+z-index: 2;
+}
+
+.lb11{/*c треугольника*/
+left: 0px;
+top:300px;
+position: fixed;
+z-index: 2;
+}
+
+.lb12{/*alpha треугольника*/
+left: 590px;
+top:600px;
+position: fixed;
+z-index: 2;
+}
+
+.lb13{/*h треугольника*/
+left: 300px;
+top:350px;
+position: fixed;
+z-index: 2;
+}
+
+.lab1{/*вывод P треугольника*/
+right: 200px;
+top:200px;
+position: fixed;
+}
+.lab2{/*вывод S треугольника*/
+right: 200px;
+top:250px;
+position: fixed;
+}
+
+.lb14{/*a трапеции*/
+left: 200px;
+top: 150px;
+position: fixed;
+z-index: 2;
+}
+.lb15{/*b трапеции*/
+left: 500px;
+top:300px;
+position: fixed;
+z-index: 2;
+}
+.lb16{/*c трапеции*/
+left: 200px;
+top: 500px;
+position: fixed;
+z-index: 2;
+}
+.lb17{/*d трапеции*/
+left: 100px;
+top:300px;
+position: fixed;
+z-index: 2;
+}
+.lb18{/*m трапеции*/
+left: 200px;
+top:350px;
+position: fixed;
+z-index: 2;
+}
+.lb19{/*h трапеции*/
+left: 160px;
+top:270px;
+position: fixed;
+z-index: 2;
+}
+.lb20{/*P вывод трапеции*/
+right: 250px;
+top:150px;
+position: fixed;
+}
+.lb21{/*S вывод трапеции*/
+right: 250px;
+top:250px;
+position: fixed;
+}
+
+#area .pict{
+	display: block;
+	position: relative;
+	margin: 20px;
+}
+
+#area .pict div {
+     position: absolute;
+}
+/*фигурки*/
+#c1 {/*круг*/
+width: 600px; 
+height: 600px;
+background: #4c657a;
+border-radius: 50%; 
+left: -550px;
+}
+
+#c2 {/*диаметр*/
+	width: 600px;
+	height: 10px;
+	background: rgb(0, 0, 0);
+	top: 300px;
+	left: -550px;
+	z-index: 2;
+}
+
+#c3 {/*радиус*/
+	width: 10px;
+	height: 300px;
+	background: rgb(0, 0, 0);
+	top: 0px;
+	left: -250px;
+	z-index: 2;
+	
+}
+
+#b1 {/*квадрат*/
+	width: 500px;
+	height: 500px;
+	background: rgb(121, 194, 114);
+	left: -470px;
+	
+	
+}
+
+#b2 {/*диагональ*/
+	margin-left: -5px; 
+	width: 10px; 
+	height: 500px;
+	transform: skew(135deg);
+	background: rgb(0, 0, 0);
+	left: -227px;
+	top: 0px;
+}
+
+#t1 {/*треугольник*/
+width: 0; 
+height: 0;
+border-left: 300px solid transparent;
+border-right: 300px solid transparent;
+border-bottom: 500px solid #ddc8c5;
+left: -500px;
+top: -10px;
+}
+#t2{/*высота*/
+	width: 10px;
+	height: 500px;
+	background: rgb(0, 0, 0);
+	top: -10px;
+	left: -205px;
+	z-index: 2;
+}
+#t3 {/*угол*/
+width: 0; 
+height: 0;
+border-left: 65px solid transparent;
+border-right: 40px solid transparent;
+border-bottom: 60px solid #ff0101;
+left: -0px;
+top: 430px;
+}
+
+#tr1 {/*трапеция*/
+height: 0; 
+width: 300px;
+border-bottom: 300px solid #88815b;
+border-left: 150px solid transparent;
+border-right: 150px solid transparent;
+left: -500px;
+top: 100px;
+}
+
+#tr2 {/*высота*/
+	width: 10px;
+	height: 300px;
+	background: rgb(0, 0, 0);
+	top: 100px;
+	left: -350px;
+	z-index: 2;
+}
+
+#tr3 {/*средняя линия*/
+	width: 450px;
+	height: 10px;
+	background: rgb(0, 0, 0);
+	top: 250px;
+	left: -422px;
+	z-index: 2;
+}
+
 
 		</style>
 	</head>
@@ -260,11 +529,6 @@ float: left;
 								</script>
 							</section>
 
-							<section>
-								<h3>Нахождение периметра фигур</h3>
-								
-							</section>
-
 							<section data-markdown>
 								<script type="text/template">
 										  Площади фигур
@@ -392,7 +656,7 @@ float: left;
 
 											Площадь трапеции равна произведению полусуммы её оснований на высоту:
 
-											$S = \frac{(a+b)}{2}h$.<img width="400px" src="img/2_1585030777.jpg" class ="kv">
+											$S = \frac{(a+b)}{2}h$.<img width="400px" src="img/1_1585030759.jpg" class ="kv">
 
 											Например, $a=3, b = 5, h = 6$. Тогда площадь трапеции равна
 
@@ -409,7 +673,7 @@ float: left;
 
 											Площадь трапеции равна произведению средней линии на высоту:
 
-											$S = mh$.<img width="400px" src="img/2-4-300x127.jpg" class ="kv">
+											$S = mh$.<img width="400px" src="img/2_1585030777.jpg" class ="kv">
 
 											Например, $m=5, h = 6$. Тогда площадь трапеции равна
 
@@ -516,10 +780,152 @@ float: left;
 					</section>
 					
 
-							<section>
-								<h3>Нахождение площадей фигур</h3>
+							<section >
+								<h3>Нахождение периметра и площадей фигур</h3>
 
 							</section>
+
+							<section>
+								<h4>Площадь и периметр круга</h4>
+								
+								<div id="area">
+									<div class ="pict">
+									<div id="c1"></div>
+									<div id="c2"></div>
+									<div id="c3"></div>
+									</div>
+									</div>
+							<label class="lb1">r <input type ="text" size=10 id="circ_r" class="input1"></label>
+							<label class="lb2">d <input type ="text" size=10 id="circ_d" class="input1"></label>
+								
+										
+								<label class="lb3">P$=$ <output id="circ_p"></label>
+									<p></p>
+								<label class="lb4">S$=$ <output id="circ_s"></label>	 
+									
+							</section>
+							
+							<section>
+								<h4>Площадь и периметр квадрата</h4>				
+								<div id="area">
+								<div class ="pict">
+								<div id="b1"></div>
+								<div id="b2"></div>
+								</div>
+								</div>
+
+								
+								<label class="lb5">a <input type ="text" size=10 id="kv_a" class="input1"></label>
+								<label class="lb6">d <input type ="text" size=10 id="kv_d" class="input1"></label>
+
+								<label class="lb7">P= <output id="kv_p"></label>
+								<label class="lb8">S= <output id="kv_s"></label>
+									
+									
+							</section>
+
+							
+								<section>
+								<h4>Площадь и периметр треугольника</h4>	
+								<div id="area">
+									<div class ="pict">
+									<div id="t1"></div>
+									<div id="t2"></div>
+									
+									</div>
+									</div>
+
+									<label class="lb9">a <input type ="text" size=10 id="tr_a" class="input1"></label><p></p>
+									<label class="lb10">b <input type ="text" size=10 id="tr_b" class="input1"></label><p></p>
+									<label class="lb11">c <input type ="text" size=10 id="tr_c" class="input1"></label><p></p>
+									
+									<label class="lb13">h <input type ="text" size=10 id="tr_h" class="input1"></label>
+									<p></p>
+										<label class="lab1">P= <output id="tr_p"></label>
+											<p></p>
+										<label class="lab2">S= <output id="tr_s"></label>
+								</section>	
+								<section>
+									<h4>Площадь треугольника</h4>
+									<div id="area">
+										<div class ="pict">
+										<div id="t1"></div>
+										
+										<div id="t3"></div>
+										</div>
+										</div>
+	
+										<label class="lb9">a <input type ="text" size=10 id="tr_a2" class="input1"></label><p></p>
+										<label class="lb10">b <input type ="text" size=10 id="tr_b2" class="input1"></label><p></p>
+										
+										<label class="lb12">α <input type ="text" size=10 id="tr_alpha" class="input1">
+										</label><p></p>
+										
+										<p></p>
+											
+											<label>S= <output id="tr_s2"></label>
+								</section>		
+							
+
+							<section>
+								
+								<h4>Периметр трапеции</h4>
+								<div id="area">
+									<div class ="pict">
+									<div id="tr1"></div>
+									
+									</div>
+									</div>
+
+									<label class="lb14">a <input type ="text" size=10 id="trap_a" class="input1"></label>
+									<label class="lb15">b <input type ="text" size=10 id="trap_b" class="input1"></label>
+									<label class="lb16">c <input type ="text" size=10 id="trap_c" class="input1"></label>
+									<label class="lb17">d <input type ="text" size=10 id="trap_d" class="input1"></label>
+									
+									<label class="lb20">P= <output id="trap_p"></label>
+										
+									
+									</section>
+								
+							<section>
+								<h4>Площадь трапеции</h4>
+								<div id="area">
+									<div class ="pict">
+									<div id="tr1"></div>
+									<div id="tr2"></div>
+									
+									</div>
+									</div>
+
+									<label class="lb14">a <input type ="text" size=10 id="trap_a4" class="input1"></label>
+									<label class="lb16">c <input type ="text" size=10 id="trap_c4" class="input1"></label>
+							
+									<label class="lb19">h	<input type ="text" size=10 id="trap_h" class="input1"></label>
+									
+									
+									<label class="lb21">S= <output id="trap_s"></label>
+
+								
+								</section>
+
+								<section>
+									<h4>Площадь трапеции</h4>
+									<div id="area">
+										<div class ="pict">
+										<div id="tr1"></div>
+										<div id="tr2"></div>
+										<div id="tr3"></div>
+										</div>
+										</div>
+																					
+										<label class="lb18">m<input type ="text" size=10 id="trap_m" class="input1"></label>
+										<label class="lb19">h	<input type ="text" size=10 id="trap_h2" class="input1"></label>
+										
+										<label class="lb21">S= <output id="trap_s2"></label>
+	
+									
+									</section>
+
 
 							<section data-markdown>
 								<script type="text/template">
@@ -554,6 +960,7 @@ float: left;
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/math/math.js"></script>
 		<script src="plugin/zoom/zoom.js"></script>
+		<script src = "js/main.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
